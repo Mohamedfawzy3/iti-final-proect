@@ -7,24 +7,35 @@
   --main-transtion: 0.3s;
 }
 /* start globle rules */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.sec-header{
+    padding: 10px 20px;
+}
 .sec-header p {
-  font-size: 35px;
+  font-size: 30px;
   text-transform: capitalize;
   font-weight: bold;
   color: white;
-  margin: 40px 0px;
+  margin-bottom: 50px;
+  
 }
 .text-header {
   color: var(--text-header-color);
   position: relative;
-  padding-left: 120px;
+  padding-left: 6rem !important;
   text-transform: uppercase;
   font-weight: 400;
+  padding: 15px 0px 15px 6rem;
 }
 .text-header::before {
   content: "";
   height: 1px;
-  width: 100px;
+  width: 5rem;
   background-color: #3858fb;
   position: absolute;
   top: 50%;
@@ -36,6 +47,27 @@
   padding: 10px 20px;
   border-radius: 6px;
   border: none;
+}
+/* cards */
+.image-cards .sec-header{
+    background-color: #f8f9fe;
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+}
+@media (max-width:991px) {
+    .image-cards .sec-header{
+        width: 90%;
+    }
+}
+.image-cards .sec-header p{
+    font-size: 20px!important;
+    margin: 15px;
+    font-weight: 500;
+
+}
+.image-cards img{
+width: 100%;
 }
 /* end globel rules */
 /* start navbar */
@@ -210,8 +242,13 @@
   padding: var(--main-padding);
   margin-bottom: -220px;
 }
-.form form .row {
+.form form .row .col {
   margin-bottom: 30px;
+}
+@media (min-width:465px) {
+    .form form .row1 .col{
+        flex-basis: 47%;
+        }
 }
 .form form input,
 select {
@@ -224,3 +261,66 @@ select {
 .form form .button {
   padding: 0px;
 }
+/* start recent work */
+.work{
+    padding: 150px 0px;
+}
+.work .sec-header p{
+    color: #0b3043;
+}
+.work .sec-header ul{
+    display: flex;
+    margin: 40px 0px;
+}
+.work .sec-header ul li{
+    padding: 10px 15px;
+}
+.work .sec-header ul li a{
+    color: #a09896 !important;
+    transition: var(--main-transtion);
+}
+.work .sec-header ul li a:hover{
+    color:var(--text-header-color)!important;
+}
+
+/* start consultant */
+.consultant{
+    background-image: url(../images/im15.png);
+    background-size: cover;
+    padding: 100px 0px
+}
+.consultant .text{
+    color: white;
+    font-size: 40px; 
+    font-weight: bold; 
+    
+}
+.consultant input{
+   background-color:  #0b1517 !important;
+}
+@media (max-width:465px) {
+    .consultant .button{
+        text-align: center !important;
+        margin-top: 50px;
+    }
+}
+/* our lawyers */
+.lawyers{
+padding: var(--main-padding);
+}
+.lawyers .sec-header p{
+    color: #092c40 !important;
+    
+}
+.lawyers .image-cards .sec-header p{
+    font-size: 35px;
+}
+.lawyers .image-cards .sec-header .text-header{
+    text-transform: capitalize;
+    font-size: 12px;
+    padding-left: 50px !important;
+}
+.lawyers .image-cards .sec-header .text-header::before{
+    width: 40px;
+}
+/*  */

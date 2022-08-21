@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,9 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/Normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./webfonts/fa-regular-400.ttf">
   <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
@@ -168,23 +169,40 @@
           </div>
           <form action="">
             <div class="row row1 row-cols-1 row-cols-lg-2 row-cols-md-2 justify-content-between">
-              <input type="text" placeholder="Name" class="name col">
-              <input type="text" placeholder="Phone" class="phone col">
+              <div class="Box col">
+                <input type="text" placeholder="Name" class="name" mess="plz enter your name">
+                <div class="namee-mess"></div>
+              </div>
+              <div class="Box col">
+                <input type="text" placeholder="Phone" class="phone" mess="plz enter your phone-number">
+                <div class="phone-mess"></div>
+              </div>
             </div>
             <div class="row row1 row-cols-1 row-cols-lg-2 row-cols-md-2 justify-content-between">
-              <select name="selector" id="" class="col">
-                <option value="Health Law">Health Law</option>
-                <option value="number1">number1</option>
-                <option value="number2">number2</option>
-              </select>
-              <input type="email" placeholder="Email" class="email col">
+              <div class="Box col">
+                <select name="selector" id="" onchange="check_select_tag()" mess="select elment">
+                  <option value="Health Law">Health Law</option>
+                  <option value="number1">number1</option>
+                  <option value="number2">number2</option>
+                </select>
+                <div class="select-mess"></div>
+              </div>
+              <div class="Box col">
+                <input type="email" placeholder="Email" class="email" name="email" mess="plz enter your email">
+                <div class="email-mess"></div>
+              </div>
             </div>
             <div class="row">
-              <textarea name="" id="" cols="30" rows="5" class="col" placeholder="Message"></textarea>
+              <div class="Box col">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message"
+                  mess="you must enter a meesage"></textarea>
+                <div class="text-mess"></div>
+              </div>
+
             </div>
             <div class="row">
               <div class="button col text-center">
-                <input class="col-12" type="button" value="Submit Now">
+                <input class="col-12 form-submit" type="button" value="Submit Now">
               </div>
             </div>
           </form>
@@ -231,7 +249,7 @@
                   car accident law
                 </div>
                 <div class="row align-items-end">
-                 <p class="col">within the construction idustry as their overdraft</p>
+                  <p class="col">within the construction idustry as their overdraft</p>
                 </div>
               </div>
             </div>
@@ -376,7 +394,7 @@
               architecto voluptatum, eum incidunt blanditiis rem necessitatibus mollitia reprehenderit optio sit, dolor
               facere in praesentium rerum aspernatur.</div>
             <div class="text-header">
-              read more
+              <a href="#"> read more</a>
             </div>
           </div>
         </div>
@@ -395,7 +413,7 @@
               architecto voluptatum, eum incidunt blanditiis rem necessitatibus mollitia reprehenderit optio sit, dolor
               facere in praesentium rerum aspernatur.</div>
             <div class="text-header">
-              read more
+              <a href="#"> read more</a>
             </div>
           </div>
         </div>
@@ -458,8 +476,8 @@
       <div class="footer">
         <div class="row align-items-center row-cols-1 row-cols-md-1 row-cols-lg-2">
           <div class="col  text">
-            Copyright&copy;<span class="footer-year">2021</span>All right reserved | This template is made with<i
-              class="fa-solid fa-heart"></i>by<a href="#">Colorib</a>
+            Copyright&copy; <span class="footer-year"> 2021 </span> All right reserved | This template is made with<i
+              class="fa-solid fa-heart"></i>by <a href="#"> Colorib</a>
           </div>
           <div class="col social  ">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
